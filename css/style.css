@@ -1,0 +1,113 @@
+.image {
+    float:right;
+    width:300px;
+}
+
+.test{
+    float:left;
+    width: 400px;
+    padding:50px;
+}
+    .test::before{
+        content:'Nikoloz Katapariashvili';
+        color:white;
+        text-align:center;
+        font-family:'ALK Sanet';
+        font-size:20px;
+        font-weight:bold;
+        display:block;
+        padding-bottom:10px;
+    }
+
+    .test::after{
+        content:'';
+        display:block;
+        width:50px;
+        height:3px;
+        background-color:black;
+        margin:15px auto;
+    }
+/*personal-start*/
+.main-pers {
+    display: inline-block;
+    margin: 100px auto;
+    float:left;
+}
+
+.span {
+    display: inline-block;
+    color: firebrick;
+    font-family: 'ALK Sanet';
+    font-weight: bold;
+    float: left;
+}
+
+.pers1 {
+    display: block;
+    color: green;
+    font-family: 'ALK Sanet';
+    font-weight: italic;
+    vertical-align: middle;
+}
+
+.personal {
+    display: inline-block;
+    float: right;
+}
+
+    .personal::before {
+        content: '';
+        display: inline-block;
+        height: 150px;
+        width: 3px;
+        background-color: cadetblue;
+        float: left;
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+
+/*personal-end*/
+    .wraper::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+.clear {
+    clear: both;
+}
+
+.wraper {
+    background-color:lightblue;
+    
+}
+
+.test2 {
+    display: inline-block;
+    text-align: center;
+}
+    .test2::before {
+        content: 'NIKOLOZ ';
+        display: inline-block;
+        text-transform: lowercase;
+        margin:0 10px;
+    }
+
+    .test2::after {
+        content: '';
+        width: 2px;
+        height: 15px;
+        background-color: darkviolet;
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+
+
+/*.divider {*/
+    display: inline-block;
+    height: 15px;
+    width:2px;
+    background-color: deeppink;
+    margin:0px 10px;
+}
